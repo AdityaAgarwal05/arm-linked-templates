@@ -3,15 +3,9 @@
 "contentVersion": "1.0.0.0",
 
 "parameters": {
-"environment": {
-"type": "string"
-},
-"location": {
-"type": "string"
-},
-"uniqueSeed": {
-"type": "string"
-}
+"environment": { "type": "string" },
+"location": { "type": "string" },
+"uniqueSeed": { "type": "string" }
 },
 
 "variables": {
@@ -24,9 +18,7 @@
 "apiVersion": "2023-01-01",
 "name": "[variables('storageName')]",
 "location": "[parameters('location')]",
-"sku": {
-"name": "Standard_LRS"
-},
+"sku": { "name": "Standard_LRS" },
 "kind": "StorageV2"
 }
 ],
