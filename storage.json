@@ -4,12 +4,11 @@
 
 "parameters": {
 "environment": { "type": "string" },
-"location": { "type": "string" },
-"uniqueSeed": { "type": "string" }
+"location": { "type": "string" }
 },
 
 "variables": {
-"storageName": "[toLower(concat('st', parameters('environment'), uniqueString(parameters('uniqueSeed'))))]"
+"storageName": "[toLower(concat('st', parameters('environment'), uniqueString(resourceGroup().id)))]"
 },
 
 "resources": [
