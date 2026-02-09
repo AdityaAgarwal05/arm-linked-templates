@@ -8,11 +8,14 @@
 },
 "location": {
 "type": "string"
+},
+"uniqueSeed": {
+"type": "string"
 }
 },
 
 "variables": {
-"storageName": "[toLower(concat('st', parameters('environment'), uniqueString(resourceGroup().id)))]"
+"storageName": "[toLower(concat('st', parameters('environment'), uniqueString(parameters('uniqueSeed'))))]"
 },
 
 "resources": [
